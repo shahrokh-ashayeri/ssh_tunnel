@@ -1,4 +1,5 @@
 import flet as ft
+from lib.connection import Connection
 
 
 def main(page: ft.Page):
@@ -9,6 +10,7 @@ def main(page: ft.Page):
         label="SSH Version",
         options=[ft.dropdown.Option("Version 1"), ft.dropdown.Option("Version 2")],
     )
+    txt_status = ft.TextField(value=Connection().is_alive())
     txt_server = ft.TextField(label="Server IP or URL")
     txt_username = ft.TextField(label="Username")
     txt_password = ft.TextField(label="Password", password=True)
@@ -17,6 +19,7 @@ def main(page: ft.Page):
     btn_connect = ft.FilledButton(text="Connect")
     col = ft.Column(
         [
+            txt_status,
             txt_server,
             txt_username,
             txt_password,
