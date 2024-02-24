@@ -1,4 +1,4 @@
-# Mani SSH Tunnel Client
+# SSH Tunnel Client
 
 ## Description
 
