@@ -2,7 +2,7 @@
 
 ## Description
 
-The Mani SSH Tunnel Client is a Python application designed to facilitate SSH tunneling for secure communication between clients and servers.
+The SSH Tunnel Client is a Python application designed to facilitate SSH tunneling for secure communication between clients and servers.
 
 ## Features
 
